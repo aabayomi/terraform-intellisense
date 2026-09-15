@@ -1,0 +1,27 @@
+{
+  "name": "terraform-intellisense-lite",
+  "displayName": "Terraform IntelliSense Lite",
+  "description": "Test extension: autocomplete, signature help (parameter definitions), and hover tooltips for Terraform (.tf) files",
+  "version": "0.0.1",
+  "publisher": "greeniq-tech",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aabayomi/terraform-intellisense-lite.git"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Programming Languages"],
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "languages": [
+      {
+        "id": "terraform",
+        "aliases": ["Terraform", "terraform", "HCL"],
+        "extensions": [".tf", ".tfvars"],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  }
+}
